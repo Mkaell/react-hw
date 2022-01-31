@@ -1,0 +1,13 @@
+.form {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.out {
+    display: flex;
+    flex-direction: column;
+}
