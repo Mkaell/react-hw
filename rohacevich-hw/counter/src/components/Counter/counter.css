@@ -1,0 +1,99 @@
+.counter {
+    border: 1px solid #282c34;
+    margin-top: 40px;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.counter__num {
+    font-size: 5rem;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+.flex {
+    display: flex;
+
+}
+
+.counter__btn-plus {
+    background-image: linear-gradient(to right, #56ab2f 0%, #a8e063 51%, #56ab2f 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+}
+
+.counter__btn-plus:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.counter__btn-refresh {
+    background-image: linear-gradient(to right, #ffb347 0%, #ffcc33 51%, #ffb347 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    display: block;
+
+}
+
+.counter__btn-refresh:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.counter__btn-minus {
+    background-image: linear-gradient(to right, #cb2d3e 0%, #ef473a 51%, #cb2d3e 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+}
+
+.counter__btn-minus:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.counter__btn-random {
+    background-image: linear-gradient(to right, #673AB7 0%, #512DA8 51%, #673AB7 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+}
+
+.counter__btn-random:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn:active .fa-plus {
+    transform: scale(1.3);
+}
+
+.btn:active .fa-sync-alt {
+    transform: scale(1.3);
+}
+
+.btn:active .fa-minus {
+    transform: scale(1.3);
+}
+
+.btn:active .fa-dice {
+    transform: scale(1.3);
+}
