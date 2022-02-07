@@ -11,13 +11,29 @@ const setActiveLink = ({ isActive }: IActiveLink): string => isActive ? 'active-
 
 
 const Navigation: FC = () => {
+
+    const isLogin = false;
+
     return (
 
         <nav >
             <ul className="menu">
-                <NavLink to="/" className={setActiveLink}>Home</NavLink>
-                <NavLink to="/about" className={setActiveLink}>About</NavLink>
-                <NavLink to="/users" className={setActiveLink}>Users</NavLink>
+                {
+                    isLogin ? (
+                        <>
+                            <NavLink to="/" className={setActiveLink}>Home</NavLink>
+                            <NavLink to="/about" className={setActiveLink}>About</NavLink>
+                            <NavLink to="/users" className={setActiveLink}>Users</NavLink>
+                        </>
+
+                    ) : (
+                        <>
+                            <NavLink to="/" className={setActiveLink}>Home</NavLink>
+                            <NavLink to="/about" className={setActiveLink}>About</NavLink>
+                        </>
+                    )
+                }
+
             </ul>
         </nav>
 
