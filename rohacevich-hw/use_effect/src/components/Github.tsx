@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
-import './Github.css'
 import axios from 'axios';
+
+import './Github.css'
 
 
 type SearchUserType = {
@@ -28,14 +29,13 @@ export const Github = () => {
 
 
     useEffect(() => {
-        console.log("Title");
+
         if (selectedUser) {
             document.title = selectedUser.login
         }
     }, [selectedUser])
 
     useEffect(() => {
-        console.log("Axios");
 
         axios
             .get<SearchResult>(`https://api.github.com/search/users?q=${tempSearch}`)
@@ -43,9 +43,10 @@ export const Github = () => {
                 setUsers(response.data.items);
             })
     }, [searchTerm])
+
     useEffect(() => {
-        console.log("Axios user");
-        if (!!selectedUser) {
+
+        if (selectedUser) {
             axios
                 .get<UserType>(`https://api.github.com/users/${selectedUser.login}`)
                 .then(response => {
