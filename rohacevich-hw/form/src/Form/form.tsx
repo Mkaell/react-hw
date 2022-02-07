@@ -24,7 +24,6 @@ interface IUser {
     gender: string,
 };
 
-
 export const Form = () => {
 
     const [inputs, setInputs] = useState<IUser>({
@@ -37,6 +36,7 @@ export const Form = () => {
     });
 
     const [open, setOpen] = useState(false);
+
     const handleClose = () => {
         setOpen(false);
         setInputs(() => ({
@@ -50,14 +50,16 @@ export const Form = () => {
     }
 
     const handleChange = (event: any) => {
-        const name: any = event.target.name;
-        const value: any = event.target.value;
+
+        const name: string = event.target.name;
+        const value: string = event.target.value;
         setInputs(values => ({ ...values, [name]: value }))
     }
 
     const handleSubmit = (event: any) => {
+
         event.preventDefault();
-        setOpen(() => true);
+        setOpen(true);
     }
 
     const style: {} = {
@@ -69,7 +71,7 @@ export const Form = () => {
         bgcolor: 'background.paper',
         border: '2px solid #000',
         boxShadow: 24,
-        p: 4,
+        padding: '20px',
     };
 
     return (
