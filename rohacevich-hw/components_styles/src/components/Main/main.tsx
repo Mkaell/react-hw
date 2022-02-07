@@ -1,9 +1,12 @@
-import './main.css'
-import React, { useState } from 'react'
-function Main() {
-    const [backgroundColor, setColor] = useState('#282c34')
+import React, { FC, useState } from 'react'
 
-    const handleClick = () => {
+import './main.css'
+
+const Main: FC = () => {
+
+    const [backgroundColor, setColor] = useState<string>('#282c34')
+
+    const handleClick = (): void => {
         setColor('#' + Math.floor(Math.random() * 16777215).toString(16));
     }
 
