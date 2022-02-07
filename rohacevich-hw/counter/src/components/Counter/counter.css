@@ -20,7 +20,6 @@
 
 .flex {
     display: flex;
-
 }
 
 .counter__btn-plus {
@@ -37,7 +36,6 @@
     text-decoration: none;
 }
 
-
 .counter__btn-refresh {
     background-image: linear-gradient(to right, #ffb347 0%, #ffcc33 51%, #ffb347 100%);
     transition: 0.5s;
@@ -45,7 +43,6 @@
     color: white;
     box-shadow: 0 0 20px #eee;
     display: block;
-
 }
 
 .counter__btn-refresh:hover {

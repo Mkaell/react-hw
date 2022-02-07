@@ -3,21 +3,25 @@ import React, { useState } from "react";
 import './counter.css'
 
 const Counter: React.FC = () => {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState<number>(0);
 
     const increaseCount = (): void => {
-        setCount(count + 1);
+
+        setCount(count => count + 1);
     };
 
     const resetCount = (): void => {
+
         setCount(0);
     };
 
     const decreaseCount = (): void => {
-        setCount(count - 1);
+
+        setCount(count => count - 1);
     };
 
     const randomCount = (): void => {
+
         setCount(Math.floor(Math.random() * 51));
     };
 
