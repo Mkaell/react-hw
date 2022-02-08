@@ -1,0 +1,17 @@
+.menu {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.active-link {
+    color: red;
+}
